@@ -1,0 +1,327 @@
+/***** 全ページ共通　ここから *****/
+html body {
+    font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ',Meiryo,'ＭＳ Ｐゴシック','MS PGothic',sans-serif;
+}
+img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+h2 {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+table {
+    width: 100%;
+    font-size: 0.9em;
+    padding: 10px;
+    margin: 30px 0;
+    background-color: #FFF;
+}
+table caption {
+    font-weight: bold;
+}
+table td {
+    text-align: center;
+}
+
+div > p {
+    font-size: 0.9em;
+}
+
+
+
+/* --- jQM CSS　ここから --- */
+
+/* リストビュー */
+.ui-listview .ui-li-has-thumb>img:first-child, .ui-listview .ui-li-has-thumb>.ui-btn>img:first-child, .ui-listview .ui-li-has-thumb .ui-li-thumb {
+    position: absolute;
+    left: 0;
+    top: 0px;
+    max-height: 6em;
+    max-width: 6em;
+}
+.ui-listview>.ui-li-static {
+    padding: 0.5em 3em;
+}
+.ui-content .ui-listview, .ui-panel-inner>.ui-listview {
+    margin: 0;
+}
+.ui-listview>li p {
+    white-space: normal;
+    font-size: 0.9em;
+    font-weight: 400;
+    display: block;
+    margin: 0.6em 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+/* ヘッダー */
+.ui-header .ui-btn-left, .ui-header .ui-btn-right {
+    font-size: 0.6rem;
+}
+.ui-header .ui-title, .ui-footer .ui-title {
+    /* font-size: 1em; */
+    min-height: 1.1em;
+    text-align: center;
+    display: block;
+    margin: 0 20%;
+    padding: 0.7em 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    outline: 0!important;
+}
+/* --- jQM CSS　ここまで --- */
+
+
+
+.heading-A {
+    padding: 12px 30px;
+    font-size: 1rem;
+    background-image: url(../images/common/headingType-A.gif);
+    background-repeat: no-repeat;
+}
+
+#header .heading1 {
+    font-size: 1.2rem;
+}
+
+#content {
+    padding: 0;
+}
+#content h3 {
+    font-size: 1.1em;
+    line-height: 1.333;
+    font-weight: bold;
+}
+.other_menu {
+    text-align: center;
+}
+.other_menu ul {
+    margin: 0;
+    padding: 0;
+}
+.other_menu li {
+    font-size: 0.8em;
+    margin: 0;
+    padding: 10px 5px;
+}
+
+#footer {
+    margin-top: 20px;
+    text-align: center;
+}
+/***** 全ページ共通　ここまで *****/
+
+
+
+
+
+/***** index.html　ここから *****/
+#gbnav li a {
+    font-size: .4em;
+}
+
+#result .schedule {
+    margin-top: 10px;
+}
+
+table .j1_tr {
+    background-color: #E54F46;
+    color: #FFF;
+}
+table .j2_tr {
+    background-color: #40A071;
+    color: #FFF;
+}
+table .j3_tr {
+    background-color: #4C4643;
+    color: #FFF;
+}
+#player {
+    text-align: center;
+}
+#player img {
+    width: 300px;
+}
+#player .player_text {
+    width: 90%;
+    margin: 0 auto;
+    background: #FFF;
+    padding: 10px;
+    margin-top: 10px;
+    text-align: left;
+}
+.player_text p {
+    font-size: 1em;
+}
+
+#news li {
+    background: #FFF;
+}
+#news p {
+    font-size: 1em;
+}
+/***** index.html　ここまで *****/
+
+
+
+
+
+/***** news.html　ここから *****/
+#content ul .news_li {
+    background: #FAFAFA;
+}
+/***** news.html　ここまで *****/
+
+
+
+
+
+/***** photo.html　ここから *****/
+.photo_menu a {
+    font-size: 0.9em;
+}
+.photo {
+    padding: 10px;
+    background: #FBFBEF;
+}
+.photo:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.photo img {
+    width: 40%;
+    float: left;
+    height: auto;
+}
+.photo .photo_text {
+    width: 55%;
+    float: right;
+    font-size: 1em;
+}
+.photo .photo_text p {
+    margin-top: 0;
+}
+/***** photo.html　ここまで *****/
+
+
+
+
+
+/***** data.html　ここから *****/
+
+/***** data.html　ここまで *****/
+
+
+
+
+
+/***** ymvp.html　ここから *****/
+.ymvp_player {
+    width: 90%;
+    margin: 10px auto;
+    font-size: 1em;
+    text-align: center;
+}
+.ymvp_player img {
+    width: 200px;
+}
+.ymvp_player_text {
+    padding: 10px;
+    margin-top: 10px;
+    background: #FFF;
+    text-align: left;
+}
+.ymvp_player_profile {
+    padding: 5px;
+}
+/***** ymvp.html　ここまで *****/
+
+
+
+
+
+/***** stadium.html　ここから *****/
+#content {
+    font-size: 0.9em;
+}
+
+#about_text {
+    margin: 10px;
+    padding: 0 10px;
+    border: 1px solid #090;
+    background: #FAFAFA;
+}
+
+#merit_list {
+    width: 80%;
+    margin: 10px auto 30px;
+    padding: 10px;
+    background: #FBF5EF;
+}
+#merit_list ol {
+    padding-left: 10%;
+}
+#merit_list .red {
+    color: #FF4000;
+}
+
+#kansen_list {
+    width: 90%;
+    margin: 0 auto;
+}
+#kansen_list ol {
+    padding-left: 5%;
+}
+#kansen_list li {
+    padding-top: 10px;
+}
+
+#ticket_list {
+    width: 90%;
+    margin: 0 auto;
+}
+#ticket_list dt {
+    font-weight: bold;
+}
+#ticket_list dd {
+    margin-bottom: 20px;
+}
+/***** stadium.html　ここまで *****/
+
+
+
+
+
+/***** praivacy.html ここから *****/
+#privacy {
+    padding: 10px 20px;
+    background: #fff0f5;
+}
+/***** praivacy.html ここまで *****/
+
+
+
+
+
+/***** kiyaku.html ここから *****/
+#kiyaku {
+    padding: 10px 20px;
+    background: #e0ffff;
+}
+/***** kiyaku.html ここまで *****/
+
+
+
+
+
+/***** question.html ここから *****/
+
+/***** question.html ここまで *****/

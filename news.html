@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="robots" content="noindex,nofollow">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>J.League Express Mobile　｜　ニュース</title>
+        <link rel="stylesheet" href="css/themes/myGreenTheme.min.css" />
+        <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    </head>
+    
+    <body>
+        <div data-role="page" data-title="ニュース">
+            <div data-role="panel" data-position-fixed="true" data-position="right" data-shadow="false" id="menu">
+                    <a class="ui-btn ui-corner-all ui-shadow ui-btn-icon-left ui-icon-home ui-mini" href="index.html" data-ajax="false">ホーム</a>
+                    <a class="ui-btn ui-corner-all ui-shadow ui-btn-icon-left ui-icon-info ui-mini" href="news.html" data-ajax="false">ニュース</a>
+                    <a class="ui-btn ui-corner-all ui-shadow ui-btn-icon-left ui-icon-camera ui-mini" href="photo.html" data-ajax="false">フォト</a>
+                    <a class="ui-btn ui-corner-all ui-shadow ui-btn-icon-left ui-icon-star ui-mini" href="data.html" data-ajax="false">データ</a>
+                    <a class="ui-btn ui-corner-all ui-shadow ui-btn-icon-left ui-icon-user ui-mini" href="ymvp.html" data-ajax="false">YMVP</a>
+                    <a class="ui-btn ui-corner-all ui-shadow ui-btn-icon-left ui-icon-location ui-mini" href="stadium.html" data-ajax="false">スタジアムへGO</a>   
+            </div>
+            
+            <div data-role="header" data-position="fixed" data-tap-toggle="false" id="header">
+                <a href="#menu" class="ui-btn-right" data-icon="bars" data-iconpos="top">メニュー</a>
+                <h1 class="heading1">ニュース</h1>
+            </div>
+            
+            <div data-role="content" id="content">
+                <ul data-role="listview">
+                    <li class="news_li">
+                        <p><b>2位鹿島は完封勝利</b></p>
+                        <p>大宮 0－1 鹿島</p>
+                        <p>鹿島は守備を固める大宮に対し、決定機を決めきれずに前半をスコアレスドローで折り返す。<br />
+                        試合が動いたのは後半40分、MF遠藤が中盤でインターセプトしたボールを、FW鈴木優磨と繋ぎ、最後はMF土居がGKとの一対一を冷静に決めた。<br />
+                        鹿島はこの1点を守りきり、アウェイで勝利。大宮は開幕から5連敗となってしまった。</p>
+                    </li>
+                    
+                    <li class="news_li">
+                        <p><b>G大阪が終盤で逆転勝ち</b></p>
+                        <p>新潟 2－3 G大阪</p>
+                        <p>G大阪は前半10分、先日のW杯最終予選で出場したFW倉田秋のワザありゴールで幸先よく先制する。<br />
+                        しかし、この日はパスミスが目立ち、ショートカウンターからPKを献上し決められる。<br />
+                        更に後半開始早々、またも中盤でインターセプトされ、スルーパスから逆転ゴールを許す。<br />
+                        それでも後半30分にCKから同点。後半ロスタイムにはMF井手口が逆転ゴール。土壇場で勝ち点3を手にした。</p>
+                    </li>
+                    
+                    <li class="news_li">
+                        <p><b>乱打戦はドローで決着</b></p>
+                        <p>F東京 3－3 鳥栖</p>
+                        <p>前半4分はFW豊田のPKで鳥栖が先制。F東京も反撃、ルヴァン杯で好調のFW阿部拓馬のクロスからFWピーター・ウタカが同点ゴール。<br />
+                        前半終了間際にはCKから逆転に成功。更に後半40分相手DFとGKの連携ミスから3点目。<br />
+                        これで勝負あったかと思われたが、諦めない鳥栖は後半42分にCKから1点を返すと、ロスタイムにFW豊田がかかとで押し込み同点ゴールを決める。<br />
+                        このゴールの直後に試合終了。両チームともGKとDFの連携が問われる試合となった。</p>
+                    </li>
+                </ul>
+                
+                <p><a onClick="$.mobile.silentScroll(0);" data-role="button">ページトップへ</a></p>
+                
+                <div class="other_menu">
+                    <ul>
+                        <li><a href="privacy.html" data-ajax="false">プライバシーポリシー</a></li>
+                        <li><a href="kiyaku.html" data-ajax="false">利用規約</a></li>
+                        <li><a href="question.html" data-ajax="false">よくある質問</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div data-role="footer" id="footer">
+                <p><small>Copyright &copy; 2017 J.League Express</small></p>
+            </div>
+        </div>
+    </body>
+</html>

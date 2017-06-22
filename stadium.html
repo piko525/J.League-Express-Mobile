@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="robots" content="noindex,nofollow">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>J.League Express｜スタジアム</title>
+        <link rel="stylesheet" href="css/themes/myGreenTheme.min.css" />
+        <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    </head>
+
+    <body>
+        <div data-role="page" data-title="スタジアム">
+            <div data-role="panel" data-position-fixed="true" data-position="right" data-shadow="false" id="menu">
+                    <a class="ui-btn ui-corner-all ui-shadow ui-btn-icon-left ui-icon-home ui-mini" href="index.html" data-ajax="false">ホーム</a>
+                    <a class="ui-btn ui-corner-all ui-shadow ui-btn-icon-left ui-icon-info ui-mini" href="news.html" data-ajax="false">ニュース</a>
+                    <a class="ui-btn ui-corner-all ui-shadow ui-btn-icon-left ui-icon-camera ui-mini" href="photo.html" data-ajax="false">フォト</a>
+                    <a class="ui-btn ui-corner-all ui-shadow ui-btn-icon-left ui-icon-star ui-mini" href="data.html" data-ajax="false">データ</a>
+                    <a class="ui-btn ui-corner-all ui-shadow ui-btn-icon-left ui-icon-user ui-mini" href="ymvp.html" data-ajax="false">YMVP</a>
+                    <a class="ui-btn ui-corner-all ui-shadow ui-btn-icon-left ui-icon-location ui-mini" href="stadium.html" data-ajax="false">スタジアムへGO</a>   
+            </div>
+            
+            <div data-role="header" data-position="fixed" data-tap-toggle="false" id="header">
+                <a href="#menu" class="ui-btn-right" data-icon="bars" data-iconpos="top">メニュー</a>
+                <h1 class="heading1">スタジアムへGO</h1>
+            </div>
+            
+            <div data-role="content" id="content">
+                <div id="about_text">
+                    <p>テレビで観戦するのとスタジアムで観戦するのは大きな違いがあります。<br />
+                    このページではスタジアム観戦の魅力を紹介します。</p>
+                </div>
+                
+                <img src="images/stadium/stadium.jpg" alt="スタジアム" />
+                
+                <h2 class="heading-A">生観戦する3つのメリット</h2>
+                <div id="merit_list">
+                    <ol>
+                        <li><span class="red">驚き</span>：スタジアムの臨場感に驚き！</li>
+                        <li><span class="red">喜び</span>：喜びはテレビ観戦の倍以上！</li>
+                        <li><span class="red">感動</span>：スタジアムの雰囲気や演出に感動！</li>
+                    </ol>
+                </div>
+                
+                <h2 class="heading-A">楽しく観戦するためには？</h2>
+                <div id="kansen_list">
+                    <ol>
+                        <li>ゴール裏のサポーター席で応援するときは、応援するチームの色の服を着るようにしましょう。<br />
+                            当日スタジアムでも購入することができます。</li>
+                        <li>ビン・缶はスタジアムで用意している紙コップに移し替えることになります。<br />
+                            ペットボトルの持ち込みはOKです。</li>
+                        <li>スタジアムは試合開始の2時間前に開場します。<br />
+                            注目の試合（上位同士の対戦や、同じ県にあるチーム同士の対戦など）は、通常より多くの人が入場されることが予想されます。1時間前には入場し、席を確保しておいた方がよいでしょう。</li>
+                    </ol>
+                </div>
+                
+                <h2 class="heading-A">チケットの買い方</h2>
+                <div id="ticket_list">
+                    <dl>
+                        <dt>ウェブで買う</dt>
+                        <dd>パソコン・スマホ・タブレットとインターネット環境があれば、いつでもどこでも買うことができます。</dd>
+
+                        <dt>コンビニで買う</dt>
+                        <dd>お近くのコンビニで購入することができます。<br />
+                            参考サイト：セブンイレブン、ローソン、ファミリーマート<br />
+                            ※店舗によっては取り扱っていないチームもありますのでご注意下さい。</dd>
+
+                        <dt>スタジアムで買う</dt>
+                        <dd>試合当日にスタジアムで購入することができます。<br />
+                            ※完売している場合は購入することができないので、事前にウェブまたはコンビニで購入するのがオススメです。</dd>
+                    </dl>
+                </div>
+                
+                <p><a onClick="$.mobile.silentScroll(0);" data-role="button">ページトップへ</a></p>
+                
+                <div class="other_menu">
+                    <ul>
+                        <li><a href="privacy.html" data-ajax="false">プライバシーポリシー</a></li>
+                        <li><a href="kiyaku.html" data-ajax="false">利用規約</a></li>
+                        <li><a href="question.html" data-ajax="false">よくある質問</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div data-role="footer" id="footer">
+                <p><small>Copyright &copy; 2017 J.League Express</small></p>
+            </div>
+        </div>
+    </body>
+</html>

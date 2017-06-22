@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="robots" content="noindex,nofollow">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>J.League Express Mobile</title>
+        <link rel="stylesheet" href="css/themes/myGreenTheme.min.css" />
+        <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    </head>
+
+    <body>
+        <!-- ページ全体 -->
+        <div data-role="page" data-title="J.League Express">
+            <!-- スライドメニュー -->
+            <div data-role="panel" data-position-fixed="true" data-position="right" data-shadow="false" id="menu">
+                    <a class="ui-btn ui-corner-all ui-shadow ui-btn-icon-left ui-icon-home ui-mini" href="index.html" data-ajax="false">ホーム</a>
+                    <a class="ui-btn ui-corner-all ui-shadow ui-btn-icon-left ui-icon-info ui-mini" href="news.html" data-ajax="false">ニュース</a>
+                    <a class="ui-btn ui-corner-all ui-shadow ui-btn-icon-left ui-icon-camera ui-mini" href="photo.html" data-ajax="false">フォト</a>
+                    <a class="ui-btn ui-corner-all ui-shadow ui-btn-icon-left ui-icon-star ui-mini" href="data.html" data-ajax="false">データ</a>
+                    <a class="ui-btn ui-corner-all ui-shadow ui-btn-icon-left ui-icon-user ui-mini" href="ymvp.html" data-ajax="false">YMVP</a>
+                    <a class="ui-btn ui-corner-all ui-shadow ui-btn-icon-left ui-icon-location ui-mini" href="stadium.html" data-ajax="false">スタジアムへGO</a>  
+            </div>
+            
+            <!-- ヘッダー -->
+            <div data-role="header" data-position="fixed" data-tap-toggle="false" id="header">
+                <a href="#menu" class="ui-btn-right" data-icon="bars" data-iconpos="top">メニュー</a>
+                <h1 class="heading1">J.League Express</h1>
+            </div>
+            
+            <!-- メインコンテンツ -->
+            <div data-role="content" id="content">
+                <div data-role="navbar" data-icopons="top" id="gbnav">
+                    <ul>
+                        <li><a href="news.html" data-icon="info" data-ajax="false">ニュース</a></li>
+                        <li><a href="photo.html" data-icon="camera" data-ajax="false">フォト</a></li>
+                        <li><a href="data.html" data-icon="star" data-ajax="false">データ</a></li>
+                        <li><a href="ymvp.html" data-icon="user" data-ajax="false">YMVP</a></li>
+                        <li><a href="stadium.html" data-icon="location" data-ajax="false">スタGO</a></li>
+                    </ul>
+                </div>
+                
+                <div id="main_visual">
+                    <p><img src="images/index/mainVisualFree.jpg" alt="注目試合" /></p>
+                </div>
+                
+                <div data-role="collapsible-set" id="result">
+                    <div data-role="collapsible">
+                        <h2>J1試合</h2>
+                        <table>
+                            <caption>J1 第1節</caption>
+                            <tr class="j1_tr">
+                                <th>HOME</th>
+                                <th>スコア</th>
+                                <th>AWAY</th>
+                                <th>キックオフ</th>
+                            </tr>
+                            
+                            <tr>
+                                <td>横浜FM</td>
+                                <td>---</td>
+                                <td>浦和</td>
+                                <td>12:30</td>
+                            </tr>
+                            
+                            <tr>
+                                <td>仙台</td>
+                                <td>---</td>
+                                <td>札幌</td>
+                                <td>14:00</td>
+                            </tr>
+                            
+                            <tr>
+                                <td>鹿島</td>
+                                <td>---</td>
+                                <td>F東京</td>
+                                <td>14:00</td>
+                            </tr>
+                            
+                            <tr>
+                                <td>清水</td>
+                                <td>---</td>
+                                <td>神戸</td>
+                                <td>14:00</td>
+                            </tr>
+                            
+                            <tr>
+                                <td>広島</td>
+                                <td>---</td>
+                                <td>新潟</td>
+                                <td>14:00</td>
+                            </tr>
+                            
+                            <tr>
+                                <td>鳥栖</td>
+                                <td>---</td>
+                                <td>柏</td>
+                                <td>14:00</td>
+                            </tr>
+                            
+                            <tr>
+                                <td>C大阪</td>
+                                <td>---</td>
+                                <td>磐田</td>
+                                <td>15:00</td>
+                            </tr>
+                            
+                            <tr>
+                                <td>大宮</td>
+                                <td>---</td>
+                                <td>川崎F</td>
+                                <td>16:00</td>
+                            </tr>
+                            
+                            <tr>
+                                <td>G大阪</td>
+                                <td>---</td>
+                                <td>甲府</td>
+                                <td>17:00</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div data-role="collapsible">
+                        <h2>J2試合</h2>
+                        <table class="schedule">
+                            <caption>J2 第1節</caption>
+                            <tr class="j2_tr">
+                                <th>HOME</th>
+                                <th>スコア</th>
+                                <th>AWAY</th>
+                                <th>キックオフ</th>
+                            </tr>
+                            
+                            <tr>
+                                <td>福岡</td>
+                                <td>---</td>
+                                <td>大分</td>
+                                <td>13:00</td>
+                            </tr>
+                            
+                            <tr>
+                                <td>長崎</td>
+                                <td>---</td>
+                                <td>群馬</td>
+                                <td>13:00</td>
+                            </tr>
+                            
+                            <tr>
+                                <td>熊本</td>
+                                <td>---</td>
+                                <td>讃岐</td>
+                                <td>13:00</td>
+                            </tr>
+                            
+                            <tr>
+                                <td>水戸</td>
+                                <td>---</td>
+                                <td>湘南</td>
+                                <td>14:00</td>
+                            </tr>
+                            
+                            <tr>
+                                <td>町田</td>
+                                <td>---</td>
+                                <td>千葉</td>
+                                <td>14:00</td>
+                            </tr>
+                            
+                            <tr>
+                                <td>横浜C</td>
+                                <td>---</td>
+                                <td>松本</td>
+                                <td>14:00</td>
+                            </tr>
+                            
+                            <tr>
+                                <td>名古屋</td>
+                                <td>---</td>
+                                <td>岡山</td>
+                                <td>14:00</td>
+                            </tr>
+                            
+                            <tr>
+                                <td>讃岐</td>
+                                <td>---</td>
+                                <td>山口</td>
+                                <td>14:00</td>
+                            </tr>
+                            
+                            <tr>
+                                <td>京都</td>
+                                <td>---</td>
+                                <td>山形</td>
+                                <td>14:00</td>
+                            </tr>
+                            
+                            <tr>
+                                <td>徳島</td>
+                                <td>---</td>
+                                <td>東京V</td>
+                                <td>14:00</td>
+                            </tr>
+                            
+                            <tr>
+                                <td>愛媛</td>
+                                <td>---</td>
+                                <td>金沢</td>
+                                <td>15:00</td>
+                            </tr>
+                        </table>
+
+                    </div>
+                    <div data-role="collapsible">
+                        <h2>J3試合</h2>
+                        <table class="schedule">
+                            <caption>J3 第1節</caption>
+                            <tr class="j3_tr">
+                                <th>HOME</th>
+                                <th>スコア</th>
+                                <th>AWAY</th>
+                                <th>キックオフ</th>
+                            </tr>
+                            
+                            <tr>
+                                <td>YS横浜</td>
+                                <td>---</td>
+                                <td>福島</td>
+                                <td>13:00</td>
+                            </tr>
+                            
+                            <tr>
+                                <td>鹿児島</td>
+                                <td>---</td>
+                                <td>藤枝</td>
+                                <td>14:00</td>
+                            </tr>
+                            
+                            <tr>
+                                <td>栃木</td>
+                                <td>---</td>
+                                <td>琉球</td>
+                                <td>13:00</td>
+                            </tr>
+                            
+                            <tr>
+                                <td>相模原</td>
+                                <td>---</td>
+                                <td>長野</td>
+                                <td>13:00</td>
+                            </tr>
+                            
+                            <tr>
+                                <td>北九州</td>
+                                <td>---</td>
+                                <td>秋田</td>
+                                <td>14:00</td>
+                            </tr>
+                            
+                            <tr>
+                                <td>F東京23</td>
+                                <td>---</td>
+                                <td>富山</td>
+                                <td>14:00</td>
+                            </tr>
+                            
+                            <tr>
+                                <td>G大阪23</td>
+                                <td>---</td>
+                                <td>鳥取</td>
+                                <td>14:00</td>
+                            </tr>
+                            
+                            <tr>
+                                <td>C大阪23</td>
+                                <td>---</td>
+                                <td>盛岡</td>
+                                <td>14:00</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                
+                <h2 class="heading-A">注目の選手</h2>
+                <div id="player">
+                    <img src="images/index/player.jpg" alt="注目選手" />
+                    <div class="player_text">
+                        <p><b>小川航基（ジュビロ磐田） Age.19</b></p>
+                        <p>昨年加入した桐光学園出身のFW。昨年の公式試合の出場はルヴァン杯の1試合のみ。<br />
+                        今年は出場はもちろんのこと、ゴールも期待したいところだ。</p>
+                    </div>
+                </div>
+                
+                <h2 class="heading-A">注目のニュース</h2>
+                <div id="news">
+                    <ul data-role="listview">
+                        <li>
+                            <p><b>静岡ダービーは磐田が完勝</b></p>
+                            <p>磐田 3 - 1 清水</p>
+                            <p>約4万人の観客が見守る中行われた静岡ダービー。4年ぶりということもあり、サポーターのボルテージは最高潮に達した。この試合で輝きを放ったのは磐田の中村俊輔だった。セットプレー2つを含む全3得点に絡み、存在感を見せつけた。<br />
+                            次節は古巣の横浜FM戦、中村は「平常心でいきたい」と言っていたが、その目は静かに闘志を燃やしているように思えた。</p>
+                        </li>
+                        <li>
+                            <p><b>浦和が首位神戸を撃破</b></p>
+                            <p>神戸 1 - 3 浦和</p>
+                            <p>浦和は4連勝中の首位神戸のホームに乗り込んだ。多くの選手が「前半戦の山場」と語る中で行われた一戦。<br />
+                            柏木、遠藤航のゴールで浦和が2点をリードする。しかし、試合終盤に神戸が一瞬のスキをつき、1点を返す。<br />
+                            それでも浦和が、この日MVPの柏木の得点でロスタイムに突き放し、常勝チームの貫禄を見せつけた。</p>
+                        </li>
+                        <li>
+                            <p><b>C大阪が公式戦3連勝</b></p>
+                            <p>C大阪 2 - 0 横浜FM</p>
+                            <p>今シーズン、ルヴァン杯で対戦した両チームだが、2度目の対戦もC大阪が制した。<br />
+                            横浜FMにほとんど決定的な形を作らせず、前半をスコアレスで終えた。試合はセットプレーからルヴァン杯でも活躍した木本がボレーを叩き込む。<br />
+                            1点ビハインドの横浜FMは、齋藤学を中心に果敢に攻めたてる。それでもキムジンヒョンを中心としたC大阪の守備は崩れず、逆にカウンターからPKを得る。これをキャプテン柿谷が冷静に流し込み、公式戦3連勝を飾った。</p>
+                        </li>
+                    </ul>
+                </div>
+                
+                <p><a onClick="$.mobile.silentScroll(0);" data-role="button">ページトップへ</a></p>
+                
+                <div class="other_menu">
+                    <ul>
+                        <li><a href="privacy.html" data-ajax="false">プライバシーポリシー</a></li>
+                        <li><a href="kiyaku.html" data-ajax="false">利用規約</a></li>
+                        <li><a href="question.html" data-ajax="false">よくある質問</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- フッター -->
+            <div data-role="footer" id="footer">
+                <p><small>Copyright &copy; 2017 J.League Express</small></p>    
+            </div>
+        </div>
+    </body>
+</html>
